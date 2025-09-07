@@ -46,3 +46,117 @@
 - 记下对应外设的编号（"外设名"_外设编号->"外设原名"）
 - 将启动配置中对应外设的编号（此内容在上一部分）改成之前所记下的对应外设的编号
 - 再次运行程序即可成功连接
+## 创建自己的3维空间线段 或 导航点
+### 示例
+```json
+{
+  "name":"BZD_Pack",// 包名
+  "metadata": {
+    "version": 1.0,// 包版本
+    "description": "example lines pack"// 包描述
+  },
+  "data":{// 点/线的数据
+    "individual_Points":[// 单个点
+      {
+        "name":"point 1",// 点的名称
+        "position":{"x":0,"y":-60,"z":0},// 点的坐标
+        "DistanceFilteringMode":false// 不被被远裁剪或近裁剪
+      },
+      {
+        "name":"point 2",// 点的名称
+        "position":{"x":20,"y":-60,"z":0},// 点的坐标
+        "DistanceFilteringMode":true,// 被远裁剪或近裁剪
+        "far":50,// 远裁剪距离
+        "near":10// 近裁剪距离
+      }
+    ],
+    "individual_lines":[// 单个线
+      {
+        "name":"line 1",// 线的名称
+        "color":"0xBBFFFFFF",// 线的颜色（0xRRGGBBAA格式）
+        "startPosition":{"x":0,"y":-40,"z":0},// 线的头坐标
+        "endPosition":{"x":0,"y":-60,"z":0},// 线的尾坐标
+        "DistanceFilteringMode":true,// 被远裁剪或近裁剪
+        "far":50,// 远裁剪距离
+        "near":10// 近裁剪距离
+      },
+      {
+        "name":"line 2",// 线的名称
+        // 线如果不定义颜色则使用系统默认颜色，即绿色
+        "startPosition":{"x":0,"y":-20,"z":0},// 线的头坐标
+        "endPosition":{"x":0,"y":-30,"z":0},// 线的尾坐标
+        "DistanceFilteringMode":false// 不被被远裁剪或近裁剪
+      }
+    ],
+    "_注释":"线组内的每一个线的坐标是相对线组坐标的偏移量,点组也一样",
+    "point_groups":[ // 点集
+      {
+        "name":"Point Group 1",// 点集的名称
+        "position":{"x":30,"y":-50,"z":30},// 点集的世界坐标
+        "DistanceFilteringMode":true,// 远近裁剪设置
+        "far":50,
+        "near":10,
+        "points":[// 点集里的点在这里定义
+          {
+            "position":{"x":10,"y":10,"z":10}// 点集内的一个点
+          },
+          {
+            "position":{"x":-20,"y":-10,"z":5}// 点集内的一个点
+          }
+        ]
+      },
+      {
+        "name":"Point Group 2",
+        "position":{"x":50,"y":-60,"z":-30},
+        "DistanceFilteringMode":false,// 远近裁剪设置
+        "points":[
+          {
+            "position":{"x":10,"y":10,"z":10}
+          },
+          {
+            "position":{"x":-20,"y":-10,"z":5}
+          }
+        ]
+      }
+    ],
+    "line_groups":[// 线集
+      {
+        "name":"Line Group 1",// 线集的名称
+        "color":"0xFFFFFFFF",// 线集的颜色，如果未定义则跟随系统颜色，即绿色
+        "position":{"x":20,"y":-60,"z":20},// 线集的世界坐标
+        "DistanceFilteringMode":true,// 远近裁剪设置
+        "far":50,
+        "near":10,
+        "lines":[// 线集里的线在这里定义
+          { 
+            "color":"0x00FF00FF",// 线集里的一条线的的颜色（它是有个性的，并不想随波逐流）
+            "startPosition":{"x":0,"y":10,"z":0},
+            "endPosition":{"x":-5,"y":0,"z":20}
+          },
+          {
+            // 这条线没有定义颜色则跟随线集颜色
+            "startPosition":{"x":-5,"y":0,"z":20},
+            "endPosition":{"x":10,"y":20,"z":20}
+          }
+        ]
+      },
+      {
+        "name":"Line Group 2",
+        "color":"0x00FF00FF",
+        "position":{"x":-30,"y":-20,"z":20},
+        "DistanceFilteringMode":false,// 远近裁剪设置
+        "lines":[
+          { 
+            "startPosition":{"x":0,"y":10,"z":0},
+            "endPosition":{"x":-5,"y":0,"z":20}
+          },
+          { 
+            "startPosition":{"x":-5,"y":0,"z":20},
+            "endPosition":{"x":10,"y":20,"z":20}
+          }
+        ]
+      }
+    ]
+  }
+}
+```
