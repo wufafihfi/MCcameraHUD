@@ -13,6 +13,7 @@
 ![模组](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/0ab6ed67-0d3a-4824-ab87-3db29d513718.png "模组")
 #### 4.控制学ControlCraft 的 摄像头Camera
 ![控制学ControlCraft](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/8e1a2ab0-53a8-4ace-92f1-ee8fa555194e.png "控制学ControlCraft")
+### 还有感谢DeepSeek在我学习算法时的的帮助，这让我能够快速了解相关知识和快速找到相关文献
 ## 这是引擎控制模式下的无线红石放置示例
 ![放置位置示例](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/ab2dc6a6-e064-4301-b1e9-7742f9a5e4b1.png "放置位置示例")
 - 箭头朝向为CC电脑的正面朝向
