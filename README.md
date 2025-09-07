@@ -33,5 +33,5 @@
 ## 外设编号
 ![外设编号示例](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/015f393b-4a92-46ad-88f0-37e93d16e6cd.png "外设编号示例")
 - 在运行程序后会显示的字，其中有扫描到的外设信息
-![无线外设方块](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/015f393b-4a92-46ad-88f0-37e93d16e6cd.png "无线外设方块")
+![无线外设方块](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/0ab6ed67-0d3a-4824-ab87-3db29d513718.png "无线外设方块")
 - 因为此MOD的无线外设连接器在每次连接会给所连接的外设编号，所以在连接过后需要重新配置外设编号使程序能够成功连接
