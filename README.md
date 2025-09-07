@@ -9,13 +9,14 @@
 ![启动配置示例](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/94feea1a-2e2d-4a0e-b410-0ea227a90d29.png "启动配置示例")
 ```json
 // 实际上JSON不支持这么注释...
+// 本人玩C++习惯了...
 {
     "showYaw":true,// 显示偏航标尺
-    "showPitch":true, 显示俯仰梯
-    "showVelosity":true,
-    "showShipDirection":true,
-    "cameraCrosshairSignStyle":2,
-    "draw3DLines":true,
+    "showPitch":true,// 显示俯仰梯
+    "showVelosity":true,// 显示速度矢量
+    "showShipDirection":true,// 显示船的朝向
+    "cameraCrosshairSignStyle":2,// 准心样式 1为十字 2为方框 其他数字则没有准心
+    "draw3DLines":true,// 绘制配置文件里读取的的3维空间线段
     "radar":true,
     "showRadarData":true,
     "engineControl":true,
