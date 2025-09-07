@@ -30,6 +30,8 @@
     "HUDTranslation_unRotate_offset":{"x":0,"y":-1,"z":1}//全息屏幕在船坐标系内相对于屏幕方块的位置偏移
 }
 ```
+### 启动配置里所有项目全开后的样子
+![全开示例](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/60298d5c-d34d-41ea-a35c-8d4afd4dfe03.png "全开示例")
 ## 外设编号
 ### 
 ![外设编号示例](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/015f393b-4a92-46ad-88f0-37e93d16e6cd.png "外设编号示例")
