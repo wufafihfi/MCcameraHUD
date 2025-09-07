@@ -11,7 +11,7 @@
 // 实际上JSON不支持这么注释...
 {
     "showYaw":true,// 显示偏航标尺
-    "showPitch":true,// 显示俯仰梯
+    "showPitch":true, 显示俯仰梯
     "showVelosity":true,
     "showShipDirection":true,
     "cameraCrosshairSignStyle":2,
