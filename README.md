@@ -1,4 +1,17 @@
 # MCcameraHUD
+## 开篇
+### 这个程序所涉及到的核心MOD和方块有
+#### CC:Tweaked
+#### 虚空动力voidpower 的 全息显示器hologram
+![虚空动力](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/62dcf5df-14e6-4e8d-81ae-75b30c7588f0.png "虚空动力")
+#### 虚空引擎 void_engine
+![虚空动力](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/d53fd442-9ddf-4f6d-b922-192d3dd86f26.png "虚空动力")
+#### 虚空引擎控制器(外设) engine_controller
+![虚空动力](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/0ab6ed67-0d3a-4824-ab87-3db29d513718.png "虚空动力")
+#### 模组（图中有名和方块）
+![模组](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/0ab6ed67-0d3a-4824-ab87-3db29d513718.png "模组")
+#### 控制学ControlCraft 的 摄像头Camera
+![控制学ControlCraft](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/8e1a2ab0-53a8-4ace-92f1-ee8fa555194e.png "控制学ControlCraft")
 ## 这是引擎控制模式下的无线红石放置示例
 ![放置位置示例](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/ab2dc6a6-e064-4301-b1e9-7742f9a5e4b1.png "放置位置示例")
 - 箭头朝向为CC电脑的正面朝向
