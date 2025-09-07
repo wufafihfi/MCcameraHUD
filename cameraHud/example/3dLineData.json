@@ -1,0 +1,108 @@
+{
+  "name":"BZD_Pack",
+  "metadata": {
+    "version": 1.0,
+    "description": "example lines pack"
+  },
+  "data":{
+    "individual_Points":[
+      {
+        "name":"point 1",
+        "position":{"x":0,"y":-60,"z":0},
+        "DistanceFilteringMode":false
+      },
+      {
+        "name":"point 2",
+        "position":{"x":20,"y":-60,"z":0},
+        "DistanceFilteringMode":true,
+        "far":50,
+        "near":10
+      }
+    ],
+    "individual_lines":[
+      {
+        "name":"line 1",
+        "color":"0xBBFFFFFF",
+        "startPosition":{"x":0,"y":-40,"z":0},
+        "endPosition":{"x":0,"y":-60,"z":0},
+        "DistanceFilteringMode":true,
+        "far":50,
+        "near":10
+      },
+      {
+        "name":"line 2",
+        "startPosition":{"x":0,"y":-20,"z":0},
+        "endPosition":{"x":0,"y":-30,"z":0},
+        "DistanceFilteringMode":false
+      }
+    ],
+    "_注释":"线组内的每一个线的坐标是相对线组坐标的偏移量,点组也一样",
+    "point_groups":[
+      {
+        "name":"Point Group 1",
+        "position":{"x":30,"y":-50,"z":30},
+        "DistanceFilteringMode":true,
+        "far":50,
+        "near":10,
+        "points":[
+          {
+            "position":{"x":10,"y":10,"z":10}
+          },
+          {
+            "position":{"x":-20,"y":-10,"z":5}
+          }
+        ]
+      },
+      {
+        "name":"Point Group 2",
+        "position":{"x":50,"y":-60,"z":-30},
+        "DistanceFilteringMode":false,
+        "points":[
+          {
+            "position":{"x":10,"y":10,"z":10}
+          },
+          {
+            "position":{"x":-20,"y":-10,"z":5}
+          }
+        ]
+      }
+    ],
+    "line_groups":[
+      {
+        "name":"Line Group 1",
+        "color":"0xFFFFFFFF",
+        "position":{"x":20,"y":-60,"z":20},
+        "DistanceFilteringMode":true,
+        "far":50,
+        "near":10,
+        "lines":[
+          { 
+            "color":"0x00FFFFFF",
+            "startPosition":{"x":0,"y":10,"z":0},
+            "endPosition":{"x":-5,"y":0,"z":20}
+          },
+          { 
+            "startPosition":{"x":-5,"y":0,"z":20},
+            "endPosition":{"x":10,"y":20,"z":20}
+          }
+        ]
+      },
+      {
+        "name":"Line Group 2",
+        "color":"0x00FF00FF",
+        "position":{"x":-30,"y":-20,"z":20},
+        "DistanceFilteringMode":false,
+        "lines":[
+          { 
+            "startPosition":{"x":0,"y":10,"z":0},
+            "endPosition":{"x":-5,"y":0,"z":20}
+          },
+          { 
+            "startPosition":{"x":-5,"y":0,"z":20},
+            "endPosition":{"x":10,"y":20,"z":20}
+          }
+        ]
+      }
+    ]
+  }
+}
