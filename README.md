@@ -7,3 +7,25 @@
 - 正面的没有任何实际作用，我只是忘记把它打掉了
 ## 启动配置介绍
 ![启动配置示例](https://raw.githubusercontent.com/wufafihfi/MCcameraHUD/refs/heads/main/image/94feea1a-2e2d-4a0e-b410-0ea227a90d29.png "启动配置示例")
+```json
+// 实际上JSON不支持这么注释...
+{
+    "showYaw":true,// 显示偏航标尺
+    "showPitch":true,// 显示俯仰梯
+    "showVelosity":true,
+    "showShipDirection":true,
+    "cameraCrosshairSignStyle":2,
+    "draw3DLines":true,
+    "radar":true,
+    "showRadarData":true,
+    "engineControl":true,
+    "hologram_ID":11,
+    "camera_ID":11,
+    "Engine_ID":0,
+    "showCameraTransformData":true,
+    "Camera_Screen_Distance":0.5,
+    "hologramScale":0.05,
+    "hologramSize":{"w":500,"h":350},
+    "HUDTranslation_unRotate_offset":{"x":0,"y":-1,"z":1}
+}
+```
