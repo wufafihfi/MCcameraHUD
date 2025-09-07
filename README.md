@@ -17,16 +17,16 @@
     "showShipDirection":true,// 显示船的朝向
     "cameraCrosshairSignStyle":2,// 准心样式 1为十字 2为方框 其他数字则没有准心
     "draw3DLines":true,// 绘制配置文件里读取的的3维空间线段
-    "radar":true,
-    "showRadarData":true,
-    "engineControl":true,
-    "hologram_ID":11,
-    "camera_ID":11,
-    "Engine_ID":0,
-    "showCameraTransformData":true,
-    "Camera_Screen_Distance":0.5,
-    "hologramScale":0.05,
-    "hologramSize":{"w":500,"h":350},
-    "HUDTranslation_unRotate_offset":{"x":0,"y":-1,"z":1}
+    "radar":true,// 开启雷达并绘制矩形框住船
+    "showRadarData":true,// 显示雷达所扫描到的船的数量
+    "engineControl":true,// 开启飞控，关闭时可以不需要装引擎外设
+    "hologram_ID":11,// 全息屏外设的编号，具体看下一部分
+    "camera_ID":11,// 相机外设的编号，具体看下一部分
+    "Engine_ID":0,// 引擎外设的编号，具体看下一部分
+    "showCameraTransformData":true,// 显示相机位置和旋转数据
+    "Camera_Screen_Distance":0.5,// 相机到全息屏的距离
+    "hologramScale":0.05,// 全息屏的像素缩放，1为1格方块的1/16，0.05则是1/16/20
+    "hologramSize":{"w":500,"h":350},// 屏幕像素宽高
+    "HUDTranslation_unRotate_offset":{"x":0,"y":-1,"z":1}//全息屏幕在船坐标系内相对于屏幕方块的位置偏移
 }
 ```
